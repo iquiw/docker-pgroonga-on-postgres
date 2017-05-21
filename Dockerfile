@@ -6,7 +6,7 @@ ENV PGROONGA_VERSION=1.2.0
 COPY groonga.list /tmp/
 
 RUN apt-get update && \
-    apt-get install -y apt-transport-https gcc make postgresql-server-dev-9.6 wget && \
+    apt-get install -y apt-transport-https gcc make postgresql-server-dev-${PG_MAJOR} wget && \
 
     mv /tmp/groonga.list /etc/apt/sources.list.d/ && \
 
@@ -21,5 +21,5 @@ RUN apt-get update && \
 
     cd pgroonga-${PGROONGA_VERSION} && \
     make install && \
-    apt-get purge -y --auto-remove apt-transport-https gcc make postgresql-server-dev-9.6 wget && \
+    apt-get purge -y --auto-remove apt-transport-https gcc make postgresql-server-dev-${PG_MAJOR} wget && \
     rm -rf /usr/src/* /var/lib/apt/lists/*

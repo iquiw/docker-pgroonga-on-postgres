@@ -13,7 +13,7 @@ RUN apt-get update && \
     apt-get update && \
     apt-get install -y --allow-unauthenticated groonga-keyring && \
     apt-get update && \
-    apt-get install -y --no-install-recommends libgroonga-dev && \
+    apt-get install -y --no-install-recommends libgroonga-dev groonga-tokenizer-mecab && \
 
     cd /usr/src && \
     wget https://packages.groonga.org/source/pgroonga/pgroonga-${PGROONGA_VERSION}.tar.gz && \

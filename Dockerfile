@@ -21,5 +21,5 @@ RUN apt-get update && \
 
     cd pgroonga-${PGROONGA_VERSION} && \
     make install && \
-    apt-get purge -y --auto-remove apt-transport-https gcc make postgresql-server-dev-${PG_MAJOR} wget && \
+    apt-get purge -y --auto-remove gcc make postgresql-server-dev-${PG_MAJOR} wget && \
     rm -rf /usr/src/* /var/lib/apt/lists/*

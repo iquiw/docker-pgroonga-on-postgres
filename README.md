@@ -1,5 +1,7 @@
 # Docker image for PGroonga based on Official PostgreSQL image
 
+[![Docker Build Status](https://img.shields.io/docker/build/iquiw/pgroonga-on-postgres.svg)](https://hub.docker.com/r/iquiw/pgroonga-on-postgres/)
+
 This image provides PostgreSQL with PGroonga extension based on
 official [PostgreSQL image](https://hub.docker.com/_/postgres/).
 

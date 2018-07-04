@@ -1,7 +1,7 @@
 FROM postgres:9.6
 
 ENV DEBIAN_FRONTEND=noninteractive
-ENV PGROONGA_VERSION=2.0.7
+ENV PGROONGA_VERSION=2.0.9
 
 COPY groonga.list /tmp/
 

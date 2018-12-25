@@ -1,4 +1,4 @@
-FROM postgres:10
+FROM postgres:11
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PGROONGA_VERSION=2.1.7

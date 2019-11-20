@@ -1,12 +1,11 @@
 FROM postgres:11
 
-ENV DEBIAN_FRONTEND=noninteractive
 ENV PGROONGA_VERSION=2.2.1
 
 COPY groonga.list /tmp/
 
 RUN apt-get update && \
-    apt-get install -y apt-transport-https gcc make postgresql-server-dev-${PG_MAJOR} wget && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y apt-transport-https gcc make postgresql-server-dev-${PG_MAJOR} wget && \
     \
     mv /tmp/groonga.list /etc/apt/sources.list.d/ && \
     \

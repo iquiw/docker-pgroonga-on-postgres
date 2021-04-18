@@ -7,7 +7,7 @@ official [PostgreSQL image](https://hub.docker.com/_/postgres/).
 
 It includes the following version of PGroonga.
 
-* PGroonga v2.2.8
+* PGroonga v2.2.9
 
 It can run in the same way as the official image and the same environment
 variables can be used.

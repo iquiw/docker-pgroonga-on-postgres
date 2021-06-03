@@ -1,6 +1,6 @@
 FROM postgres:12
 
-ENV PGROONGA_VERSION=2.2.9
+ENV PGROONGA_VERSION=2.3.0
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y apt-transport-https gcc make postgresql-server-dev-${PG_MAJOR} wget && \

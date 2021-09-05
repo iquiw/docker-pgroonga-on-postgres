@@ -1,12 +1,12 @@
-FROM postgres:11
+FROM postgres:11-buster
 
 ENV PGROONGA_VERSION=2.3.1
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y apt-transport-https gcc make postgresql-server-dev-${PG_MAJOR} wget && \
-    wget https://packages.groonga.org/debian/groonga-apt-source-latest-stretch.deb && \
-    apt install -y --no-install-recommends ./groonga-apt-source-latest-stretch.deb && \
-    rm -f groonga-apt-source-latest-stretch.deb && \
+    wget https://packages.groonga.org/debian/groonga-apt-source-latest-buster.deb && \
+    apt install -y --no-install-recommends ./groonga-apt-source-latest-buster.deb && \
+    rm -f groonga-apt-source-latest-buster.deb && \
     apt-get update && \
     apt-get install -y --no-install-recommends libgroonga-dev groonga-tokenizer-mecab && \
     \

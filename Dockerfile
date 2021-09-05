@@ -1,6 +1,6 @@
 FROM postgres:10
 
-ENV PGROONGA_VERSION=2.3.0
+ENV PGROONGA_VERSION=2.3.1
 
 COPY groonga.list /tmp/
 

@@ -1,6 +1,6 @@
 FROM postgres:11-buster
 
-ENV PGROONGA_VERSION=2.3.1
+ENV PGROONGA_VERSION=2.3.2
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y apt-transport-https gcc make postgresql-server-dev-${PG_MAJOR} wget && \

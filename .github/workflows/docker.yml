@@ -35,4 +35,4 @@ jobs:
             linux/arm64
           tags: |
             iquiw/pgroonga-on-postgres:latest
-            iquiw/pgroonga-on-postgres:13
+            iquiw/pgroonga-on-postgres:14

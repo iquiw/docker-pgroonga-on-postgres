@@ -1,4 +1,4 @@
-FROM postgres:13
+FROM postgres:14
 
 ENV PGROONGA_VERSION=2.3.2
 

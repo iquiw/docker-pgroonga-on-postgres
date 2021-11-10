@@ -18,6 +18,5 @@ variables can be used.
 
 The tag number is corresponding to PostgreSQL major version.
 
-* `11` [(Dockerfile)](https://github.com/iquiw/docker-pgroonga-on-postgres/blob/master/Dockerfile)
+* `11` [(Dockerfile)](https://github.com/iquiw/docker-pgroonga-on-postgres/blob/11/Dockerfile)
 * `10` [(Dockerfile)](https://github.com/iquiw/docker-pgroonga-on-postgres/blob/10/Dockerfile)
-* `9.6` [(Dockerfile)](https://github.com/iquiw/docker-pgroonga-on-postgres/blob/9.6/Dockerfile)
